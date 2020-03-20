@@ -1,0 +1,13 @@
+{
+    "name": "alex/php-project-lvl1",
+    "description": "Hexlet project PHP Level 1. Brain Games.",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Alexander Rysaev",
+            "email": "alex.rysaev@yandex.com"
+        }
+    ],
+    "require": {}
+}

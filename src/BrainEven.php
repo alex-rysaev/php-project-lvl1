@@ -5,11 +5,13 @@ namespace BrainGames\BrainEven;
 use function cli\line;
 use function cli\prompt;
 
-function isEven($number) {
+function isEven($number) 
+{
     return $number % 2 == 0;
 }
 
-function brainEven($name) {
+function brainEven($name) 
+{
     $isCorrect = true;
     for ($i = 0; $i < 3; $i++) {
         $number = rand(1, 100);

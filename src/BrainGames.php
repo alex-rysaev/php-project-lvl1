@@ -14,10 +14,10 @@ function brainGames($name, $gameType)
         switch ($gameType) {
             case 'brainEven':
                 $answerAndGuess = brainEven();
-            break;
+                break;
             case 'brainCalc':
                 $answerAndGuess = brainCalc();
-            break;
+                break;
         }
         if (!($answerAndGuess[0] === $answerAndGuess[1])) {
             line('"%s" is wrong answer ;(. Correct answer was "%s".', $answerAndGuess[0], $answerAndGuess[1]);

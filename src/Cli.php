@@ -14,10 +14,10 @@ function run($gameType)
     switch ($gameType) {
         case 'brainEven':
             line('Answer "yes" if the number is even, otherwise answer "no".');
-        break;
+            break;
         case 'brainCalc':
             line('What is the result of the expression?');
-        break;
+            break;
     }
     line();
     $name = prompt('May I have your name?');

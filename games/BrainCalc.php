@@ -12,14 +12,25 @@ function isEven($number)
 
 function brainCalc($isCorrect)
 {
-    $number = rand(1, 100);
-    $answer = isEven($number) ? 'yes' : 'no';
-    line("Question: %s", $number);
+    $operation = array_rand(['+', '-', '*']);
+    $firstNumber = rand(1, 100);
+    $secondNumber = rand(1, 100);
+    $answer = 0;
+    switch ($operation) {
+        case '+':
+            $answer = $firstNumber + $secondNumber;
+            break;
+        case '-':
+            $answer = $firstNumber - $secondNumber;
+            break;
+        case '*':
+            $answer = $firstNumber * $secondNumber;
+            break;
+
+    }
+    line("Question: %s %s %s", $firstNumber, $operation, $secondNumber);
     $guess = prompt('Your answer');
-    $isCorrect = $guess == $answer ? true : false;
-    if ($isCorrect) {
-        return true;
-    } else {
-        return false;
-    };
+    $answerAndGuess = [$answer, $guess];
+    return $answerAndGuess;
+
 }

@@ -5,7 +5,7 @@ namespace BrainGames\BrainGames;
 use function cli\line;
 use function cli\prompt;
 use function BrainGames\BraiCalc\brainCalc;
-use function BrainGames\BraiEven\brainEven;
+use function BrainGames\BrainEven\brainEven;
 
 function brainGames($name, $gameType)
 {

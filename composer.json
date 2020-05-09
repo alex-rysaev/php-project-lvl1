@@ -16,7 +16,9 @@
     "autoload": {
         "files": [
             "src/Cli.php",
-            "src/BrainEven.php"
+            "src/BrainGames.php",
+            "games/BrainCalc.php",
+            "games/BrainEven.php"
         ]
     },
     "require-dev": {

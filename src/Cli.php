@@ -21,6 +21,9 @@ function run($gameType)
         case 'brainGCD':
             line('Find the greatest common divisor of given numbers.');
             break;
+        case 'brainProgression':
+            line('What number is missing in the progression?');
+            break;
     }
     line();
     $name = prompt('May I have your name?');

@@ -3,7 +3,8 @@
     "bin": [
         "bin/brain-even",
         "bin/brain-calc",
-        "bin/brain-gcd"
+        "bin/brain-gcd",
+        "bin/brain-progression"
     ],
     "description": "Hexlet project PHP Level 1. Brain Games.",
     "type": "project",
@@ -23,7 +24,8 @@
             "src/BrainGames.php",
             "games/BrainCalc.php",
             "games/BrainEven.php",
-            "games/BrainGCD.php"
+            "games/BrainGCD.php",
+            "games/BrainProgression.php"
         ]
     },
     "require-dev": {

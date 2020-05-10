@@ -1,6 +1,6 @@
 {
     "name": "alex-rysaev/php-project-lvl1",
-    "bin": ["bin/brain-even"],
+    "bin": ["bin/brain-even", "bin/brain-calc"],
     "description": "Hexlet project PHP Level 1. Brain Games.",
     "type": "project",
     "license": "MIT",

@@ -24,6 +24,9 @@ function run($gameType)
         case 'brainProgression':
             line('What number is missing in the progression?');
             break;
+        case 'brainPrime':
+            line('Answer "yes" if given number is prime. Otherwise answer "no".');
+            break;
     }
     line();
     $name = prompt('May I have your name?');

@@ -4,4 +4,16 @@
 
 ## Setup
 
-[![asciicast](https://asciinema.org/a/I513KidI65c5aAQKml3Sv3C4o.svg)](https://asciinema.org/a/I513KidI65c5aAQKml3Sv3C4o)
+[![asciicast](https://asciinema.org/a/B6tlRNDUU63YyWlzEnxWyVLlk.svg)](https://asciinema.org/a/B6tlRNDUU63YyWlzEnxWyVLlk)
+
+## Running Brain Even
+
+[![asciicast](https://asciinema.org/a/KkuI9o1R4aVNl25NVEutOOMIj.svg)](https://asciinema.org/a/KkuI9o1R4aVNl25NVEutOOMIj)
+
+## Running Brain Calc
+
+[![asciicast](https://asciinema.org/a/qbAEe0GcRzSNEmZXBQwYreIjc.svg)](https://asciinema.org/a/qbAEe0GcRzSNEmZXBQwYreIjc)
+
+## Running Brain GCD
+
+[![asciicast](https://asciinema.org/a/fP9o5NbEtwLIJxFCrqQ21ogkY.svg)](https://asciinema.org/a/fP9o5NbEtwLIJxFCrqQ21ogkY)

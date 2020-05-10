@@ -23,7 +23,7 @@ function brainProgression()
             $maskedProgression[] = "..";
         }
     }
-    line("Question: {0} {1} {2} {3} {4} {5} {6} {7} {8} {9}", $maskedProgression);
+    line("Question: {:0} {:1} {:2} {:3} {:4} {:5} {:6} {:7} {:8} {:9}", $maskedProgression);
     $guess = prompt('Your answer');
     $answerAndGuess = [(int) $answer, (int) $guess];
     return $answerAndGuess;

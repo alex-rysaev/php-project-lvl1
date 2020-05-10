@@ -10,7 +10,7 @@ function isEven($number)
     return $number % 2 == 0;
 }
 
-function brainCalc($isCorrect)
+function brainCalc()
 {
     $operation = array_rand(['+', '-', '*']);
     $firstNumber = rand(1, 100);

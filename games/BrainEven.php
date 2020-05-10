@@ -11,7 +11,7 @@ function isEven($number)
 }
 
 function brainEven()
-{   
+{
     $answerAndGuess = [];
     $number = rand(1, 100);
     $answer = isEven($number) ? 'yes' : 'no';

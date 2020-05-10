@@ -18,6 +18,9 @@ function run($gameType)
         case 'brainCalc':
             line('What is the result of the expression?');
             break;
+        case 'brainGCD':
+            line('Find the greatest common divisor of given numbers.');
+            break;
     }
     line();
     $name = prompt('May I have your name?');

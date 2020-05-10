@@ -27,11 +27,9 @@ function brainCalc()
         case '*':
             $answer = $firstNumber * $secondNumber;
             break;
-
     }
     line("Question: %s %s %s", $firstNumber, $operation, $secondNumber);
     $guess = prompt('Your answer');
-    $answerAndGuess = [(integer) $answer, (integer) $guess];
+    $answerAndGuess = [(int) $answer, (int) $guess];
     return $answerAndGuess;
-
 }

@@ -6,6 +6,7 @@ use function cli\line;
 use function cli\prompt;
 use function BrainGames\BrainCalc\brainCalc;
 use function BrainGames\BrainEven\brainEven;
+use function BrainGames\BrainGCD\brainGCD;
 
 function brainGames($name, $gameType)
 {
@@ -17,6 +18,9 @@ function brainGames($name, $gameType)
                 break;
             case 'brainCalc':
                 $answerAndGuess = brainCalc();
+                break;
+            case 'brainGCD':
+                $answerAndGuess = brainGCD();
                 break;
         }
         if (!($answerAndGuess[0] === $answerAndGuess[1])) {

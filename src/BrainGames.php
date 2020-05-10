@@ -8,7 +8,7 @@ use function BrainGames\BrainCalc\brainCalc;
 use function BrainGames\BrainEven\brainEven;
 use function BrainGames\BrainGCD\brainGCD;
 use function BrainGames\BrainProgression\brainProgression;
-use function BrainGames\BrainProgression\brainPrime;
+use function BrainGames\BrainPrime\brainPrime;
 
 function brainGames($name, $gameType)
 {
@@ -28,7 +28,7 @@ function brainGames($name, $gameType)
                 $answerAndGuess = brainProgression();
                 break;
             case 'brainPrime':
-                $answerAndGuess = brainProgression();
+                $answerAndGuess = brainPrime();
                 break;
         }
         if (!($answerAndGuess[0] === $answerAndGuess[1])) {

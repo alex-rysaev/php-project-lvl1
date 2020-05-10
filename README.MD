@@ -21,3 +21,7 @@
 ## Running Brain Progression
 
 [![asciicast](https://asciinema.org/a/1fIE75PiKemA2el7UBsM7WVmn.svg)](https://asciinema.org/a/1fIE75PiKemA2el7UBsM7WVmn)
+
+## Running Brain Prime
+
+[![asciicast](https://asciinema.org/a/klTaqT9JFejuvZWcX12FJiXuF.svg)](https://asciinema.org/a/klTaqT9JFejuvZWcX12FJiXuF)

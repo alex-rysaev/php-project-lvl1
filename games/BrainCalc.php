@@ -31,7 +31,7 @@ function brainCalc()
     }
     line("Question: %s %s %s", $firstNumber, $operation, $secondNumber);
     $guess = prompt('Your answer');
-    $answerAndGuess = [(integer) $answer, $guess];
+    $answerAndGuess = [(integer) $answer, (integer) $guess];
     return $answerAndGuess;
 
 }

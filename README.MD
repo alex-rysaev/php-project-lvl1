@@ -4,4 +4,4 @@
 
 ## Setup
 
-[![asciicast](https://asciinema.org/a/RvdWVdLlkOw6PIAea9Rk2RTiw.svg)](https://asciinema.org/a/RvdWVdLlkOw6PIAea9Rk2RTiw)
+[![asciicast](https://asciinema.org/a/I513KidI65c5aAQKml3Sv3C4o.svg)](https://asciinema.org/a/I513KidI65c5aAQKml3Sv3C4o)

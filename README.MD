@@ -17,3 +17,7 @@
 ## Running Brain GCD
 
 [![asciicast](https://asciinema.org/a/fP9o5NbEtwLIJxFCrqQ21ogkY.svg)](https://asciinema.org/a/fP9o5NbEtwLIJxFCrqQ21ogkY)
+
+## Running Brain Progression
+
+[![asciicast](https://asciinema.org/a/1fIE75PiKemA2el7UBsM7WVmn.svg)](https://asciinema.org/a/1fIE75PiKemA2el7UBsM7WVmn)

@@ -12,7 +12,8 @@ function isEven($number)
 
 function brainCalc()
 {
-    $operation = array_rand(['+', '-', '*']);
+    $operations = ['+', '-', '*'];
+    $operation = $operations[array_rand($operations)];
     $firstNumber = rand(1, 100);
     $secondNumber = rand(1, 100);
     $answer = 0;

@@ -15,15 +15,8 @@ function brainProgression()
         $progression[] = $progression[$i] + $step;
     }
     $answer = $progression[$maskedPosition];
-    $maskedProgression = [];
-    for ($i = 0; $i < 10; $i++) {
-        if ($i !== $maskedPosition) {
-            $maskedProgression[] = $progression[$i];
-        } else {
-            $maskedProgression[] = "..";
-        }
-    }
-    line("Question: {:0} {:1} {:2} {:3} {:4} {:5} {:6} {:7} {:8} {:9}", $maskedProgression);
+    $progression[$maskedPosition] = '..';
+    line("Question: {:0} {:1} {:2} {:3} {:4} {:5} {:6} {:7} {:8} {:9}", $progression);
     $guess = prompt('Your answer');
     $answerAndGuess = [(int) $answer, (int) $guess];
     return $answerAndGuess;

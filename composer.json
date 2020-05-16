@@ -23,11 +23,11 @@
         "files": [
             "src/Cli.php",
             "src/BrainGames.php",
-            "games/BrainCalc.php",
-            "games/BrainEven.php",
-            "games/BrainGCD.php",
-            "games/BrainProgression.php",
-            "games/BrainPrime.php"
+            "src/games/BrainCalc.php",
+            "src/games/BrainEven.php",
+            "src/games/BrainGCD.php",
+            "src/games/BrainProgression.php",
+            "src/games/BrainPrime.php"
         ]
     },
     "require-dev": {

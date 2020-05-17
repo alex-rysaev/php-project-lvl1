@@ -4,6 +4,7 @@ namespace BrainGames\BrainGCD;
 
 use function cli\line;
 use function cli\prompt;
+use function BrainGames\BrainGames\brainGames;
 
 function getGCD($a, $b)
 {
@@ -20,11 +21,15 @@ function getGCD($a, $b)
 
 function brainGCD()
 {
-    $firstNumber = rand(1, 100);
-    $secondNumber = rand(1, 100);
-    line("Question: %s %s", $firstNumber, $secondNumber);
-    $answer = getGCD($firstNumber, $secondNumber);
-    $guess = prompt('Your answer');
-    $answerAndGuess = [(int) $answer, (int) $guess];
-    return $answerAndGuess;
+    $mission = 'Find the greatest common divisor of given numbers.';
+    $gameParameters[] = $mission;
+    for ($i = 0; $i < 3; $i++) {
+        $firstNumber = rand(1, 100);
+        $secondNumber = rand(1, 100);
+        $question = "{$firstNumber} {$secondNumber}";
+        $answer = (string) getGCD($firstNumber, $secondNumber);
+        $gameParameters[1][] = [$question, $answer];
+    }
+    
+    brainGames($gameParameters);
 }

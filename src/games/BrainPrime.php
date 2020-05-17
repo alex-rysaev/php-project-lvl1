@@ -4,6 +4,7 @@ namespace BrainGames\BrainPrime;
 
 use function cli\line;
 use function cli\prompt;
+use function BrainGames\BrainGames\brainGames;
 
 function isPrime($number)
 {
@@ -17,10 +18,14 @@ function isPrime($number)
 
 function brainPrime()
 {
-    $number = rand(1, 100);
-    $answer = isPrime($number) ? 'yes' : 'no';
-    line("Question: %s", $number);
-    $guess = prompt('Your answer');
-    $answerAndGuess = [$answer, $guess];
-    return $answerAndGuess;
+    $mission = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+    $gameParameters = [$mission];
+    for ($i = 0; $i < 3; $i++) {
+        $number = rand(1, 100);
+        $question = (string) $number;
+        $answer = isPrime($number) ? 'yes' : 'no';
+        $gameParameters[1][] = [$question, $answer];
+    }
+
+    brainGames($gameParameters);
 }

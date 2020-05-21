@@ -1,10 +1,10 @@
 <?php
 
-namespace BrainGames\BrainGCD;
+namespace BrainGames\GCD;
 
-use function cli\line;
-use function cli\prompt;
-use function BrainGames\BrainGames\brainGames;
+use function BrainGames\Engine\brainEngine;
+
+use const BrainGames\Engine\ROUNDS;
 
 function getGCD($a, $b)
 {
@@ -22,14 +22,13 @@ function getGCD($a, $b)
 function brainGCD()
 {
     $mission = 'Find the greatest common divisor of given numbers.';
-    $gameParameters[] = $mission;
-    for ($i = 0; $i < 3; $i++) {
+    for ($i = 0; $i < ROUNDS; $i++) {
         $firstNumber = rand(1, 100);
         $secondNumber = rand(1, 100);
         $question = "{$firstNumber} {$secondNumber}";
         $answer = (string) getGCD($firstNumber, $secondNumber);
-        $gameParameters[1][] = [$question, $answer];
+        $questionsAndAnswers[] = [$question, $answer];
     }
     
-    brainGames($gameParameters);
+    brainEngine($mission, $questionsAndAnswers);
 }

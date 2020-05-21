@@ -1,16 +1,15 @@
 <?php
 
-namespace BrainGames\BrainProgression;
+namespace BrainGames\Progression;
 
-use function cli\line;
-use function cli\prompt;
-use function BrainGames\BrainGames\brainGames;
+use function BrainGames\Engine\brainEngine;
+
+use const BrainGames\Engine\ROUNDS;
 
 function brainProgression()
 {
     $mission = 'What number is missing in the progression?';
-    $gameParameters = [$mission];
-    for ($i = 0; $i < 3; $i++) {
+    for ($i = 0; $i < ROUNDS; $i++) {
         $step = rand(1, 10);
         $maskedPosition = rand(0, 9);
         $startNumber = rand(1, 10);
@@ -22,13 +21,12 @@ function brainProgression()
         $progression[$maskedPosition] = '..';
         $question = '';
         foreach ($progression as $progressionMember) {
-            $question .= $progressionMember . ' ';
+            $question .= "{$progressionMember} ";
         }
         $question = trim($question);
-        $gameParameters[1][] = [$question, $answer];
-        print_r($gameParameters);
+        $questionsAndAnswers[] = [$question, $answer];
         $progression = [];
     }
     
-    brainGames($gameParameters);
+    brainEngine($mission, $questionsAndAnswers);
 }

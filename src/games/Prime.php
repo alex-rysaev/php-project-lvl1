@@ -1,13 +1,17 @@
 <?php
 
-namespace BrainGames\BrainPrime;
+namespace BrainGames\Prime;
 
-use function cli\line;
-use function cli\prompt;
-use function BrainGames\BrainGames\brainGames;
+use function BrainGames\Engine\brainEngine;
+
+use const BrainGames\Engine\ROUNDS;
 
 function isPrime($number)
 {
+    if ($number < 2) {
+        return false;
+    }
+    
     for ($i = 2; $i <= sqrt($number); $i++) {
         if ($number % $i === 0) {
             return false;
@@ -19,13 +23,12 @@ function isPrime($number)
 function brainPrime()
 {
     $mission = 'Answer "yes" if given number is prime. Otherwise answer "no".';
-    $gameParameters = [$mission];
-    for ($i = 0; $i < 3; $i++) {
+    for ($i = 0; $i < ROUNDS; $i++) {
         $number = rand(1, 100);
         $question = (string) $number;
         $answer = isPrime($number) ? 'yes' : 'no';
-        $gameParameters[1][] = [$question, $answer];
+        $questionsAndAnswers[] = [$question, $answer];
     }
 
-    brainGames($gameParameters);
+    brainEngine($mission, $questionsAndAnswers);
 }

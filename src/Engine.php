@@ -1,15 +1,16 @@
 <?php
 
-namespace BrainGames\BrainGames;
+namespace BrainGames\Engine;
 
 use function cli\line;
 use function cli\prompt;
 
-function brainGames($gameParameters)
+const ROUNDS = 3;
+
+function brainEngine($mission, $questionsAndAnswers)
 {
-    $mission = $gameParameters[0];
-    $questionsAndAnswers = $gameParameters[1];
-    $guess = '';
+
+    $guess = null;
     line('Welcome to the Brain Games!');
     line("%s", $mission);
     line();
@@ -22,10 +23,9 @@ function brainGames($gameParameters)
         if ($guess !== $answer) {
             line('"%s" is wrong answer ;(. Correct answer was "%s".', $guess, $answer);
             line('Let\'s try again, %s!', $name);
-            break;
+            return false;
         }
     }
-    if ($guess == $answer) {
-        line("Congratulations, %s!", $name);
-    }
+
+    line("Congratulations, %s!", $name);
 }

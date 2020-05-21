@@ -1,5 +1,8 @@
 # PHP Project Level 1
 
+[![Maintainability](https://api.codeclimate.com/v1/badges/94672faf6d06259441cf/maintainability)](https://codeclimate.com/github/alex-rysaev/php-project-lvl1/maintainability)
+![PHP CI](https://github.com/alex-rysaev/php-project-lvl1/workflows/PHP%20CI/badge.svg)
+
 ## Brain Games
 
 These are small games for brain training. Five games are currently available:
@@ -11,9 +14,6 @@ These are small games for brain training. Five games are currently available:
 * Brain Progression — finding the missing progression element
 
 You need to solve the problem three times in a row — then you win.
-
-[![Maintainability](https://api.codeclimate.com/v1/badges/94672faf6d06259441cf/maintainability)](https://codeclimate.com/github/alex-rysaev/php-project-lvl1/maintainability)
-![PHP CI](https://github.com/alex-rysaev/php-project-lvl1/workflows/PHP%20CI/badge.svg)
 
 ## Setup
 

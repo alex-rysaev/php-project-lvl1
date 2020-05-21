@@ -17,7 +17,8 @@ You need to solve the problem three times in a row — then you win.
 
 ## Setup
 
-To install Brain Games you must have a Composer installed. Also you may need to add Composer's `vendor/bin` folder to your `$PATH`.
+To setting up Brain Games you must have Composer installed. Also you may need to
+add Composer's `vendor/bin` folder to your `$PATH`.
 
 Installing Brain Games:
 

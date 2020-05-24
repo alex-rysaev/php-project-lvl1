@@ -19,11 +19,11 @@ function brainProgression()
         }
         $answer = (string) $progression[$maskedPosition];
         $progression[$maskedPosition] = '..';
-        $question = '';
+        $question = [];
         foreach ($progression as $progressionMember) {
-            $question .= "{$progressionMember} ";
+            $question[] = $progressionMember;
         }
-        $question = trim($question);
+        $question = implode(' ', $question);
         $questionsAndAnswers[] = [$question, $answer];
         $progression = [];
     }

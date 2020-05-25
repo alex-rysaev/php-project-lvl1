@@ -5,7 +5,7 @@ namespace BrainGames\Engine;
 use function cli\line;
 use function cli\prompt;
 
-const ROUNDS = 3;
+const ROUNDS_COUNT = 3;
 
 function brainEngine($mission, $questionsAndAnswers)
 {
@@ -21,11 +21,12 @@ function brainEngine($mission, $questionsAndAnswers)
         line("Question: %s", $question);
         $guess = prompt("Your answer");
         if ($guess !== $answer) {
-            line('"%s" is wrong answer ;(. Correct answer was "%s".', $guess, $answer);
-            line('Let\'s try again, %s!', $name);
+            line("'%s' is wrong answer ;(. Correct answer was '%s'.", $guess, $answer);
+            line("Let's try again, %s!", $name);
             return false;
         }
     }
 
     line("Congratulations, %s!", $name);
+    return true;
 }

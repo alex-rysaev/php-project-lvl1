@@ -4,13 +4,13 @@ namespace BrainGames\Calc;
 
 use function BrainGames\Engine\brainEngine;
 
-use const BrainGames\Engine\ROUNDS;
+use const BrainGames\Engine\ROUNDS_COUNT;
 
 function brainCalc()
 {
     $mission = 'What is the result of the expression?';
     $operations = ['+', '-', '*'];
-    for ($i = 0; $i < ROUNDS; $i++) {
+    for ($i = 0; $i < ROUNDS_COUNT; $i++) {
         $operation = $operations[array_rand($operations)];
         $firstNumber = rand(1, 10);
         $secondNumber = rand(1, 20);

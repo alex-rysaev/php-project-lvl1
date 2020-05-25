@@ -4,7 +4,7 @@ namespace BrainGames\GCD;
 
 use function BrainGames\Engine\brainEngine;
 
-use const BrainGames\Engine\ROUNDS;
+use const BrainGames\Engine\ROUNDS_COUNT;
 
 function getGCD($a, $b)
 {
@@ -22,7 +22,7 @@ function getGCD($a, $b)
 function brainGCD()
 {
     $mission = 'Find the greatest common divisor of given numbers.';
-    for ($i = 0; $i < ROUNDS; $i++) {
+    for ($i = 0; $i < ROUNDS_COUNT; $i++) {
         $firstNumber = rand(1, 100);
         $secondNumber = rand(1, 100);
         $question = "{$firstNumber} {$secondNumber}";

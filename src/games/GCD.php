@@ -22,6 +22,7 @@ function getGCD($a, $b)
 function brainGCD()
 {
     $mission = 'Find the greatest common divisor of given numbers.';
+    
     for ($i = 0; $i < ROUNDS_COUNT; $i++) {
         $firstNumber = rand(1, 100);
         $secondNumber = rand(1, 100);

@@ -9,6 +9,7 @@ use const BrainGames\Engine\ROUNDS_COUNT;
 function brainProgression()
 {
     $mission = 'What number is missing in the progression?';
+    
     for ($i = 0; $i < ROUNDS_COUNT; $i++) {
         $step = rand(1, 10);
         $maskedPosition = rand(0, 9);

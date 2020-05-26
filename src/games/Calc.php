@@ -9,11 +9,14 @@ use const BrainGames\Engine\ROUNDS_COUNT;
 function brainCalc()
 {
     $mission = 'What is the result of the expression?';
+    
     $operations = ['+', '-', '*'];
     for ($i = 0; $i < ROUNDS_COUNT; $i++) {
-        $operation = $operations[array_rand($operations)];
+        $randomKey = array_rand($operations);
+        $operation = $operations[$randomKey];
         $firstNumber = rand(1, 10);
         $secondNumber = rand(1, 20);
+        
         switch ($operation) {
             case '+':
                 $answer = $firstNumber + $secondNumber;
@@ -25,8 +28,9 @@ function brainCalc()
                 $answer = $firstNumber * $secondNumber;
                 break;
         }
+        $answer = (string) $answer;
         $question = "{$firstNumber} {$operation} {$secondNumber}";
-        $questionsAndAnswers[] = [$question, (string) $answer];
+        $questionsAndAnswers[] = [$question, $answer];
     }
     
     brainEngine($mission, $questionsAndAnswers);

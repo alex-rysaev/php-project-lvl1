@@ -2,7 +2,7 @@
 
 namespace BrainGames\Calc;
 
-use function BrainGames\Engine\brainEngine;
+use function BrainGames\Engine\engine;
 
 use const BrainGames\Engine\ROUNDS_COUNT;
 
@@ -33,5 +33,5 @@ function brainCalc()
         $questionsAndAnswers[] = [$question, $answer];
     }
     
-    brainEngine($mission, $questionsAndAnswers);
+    engine($mission, $questionsAndAnswers);
 }

@@ -2,7 +2,7 @@
 
 namespace BrainGames\GCD;
 
-use function BrainGames\Engine\brainEngine;
+use function BrainGames\Engine\engine;
 
 use const BrainGames\Engine\ROUNDS_COUNT;
 
@@ -31,5 +31,5 @@ function brainGCD()
         $questionsAndAnswers[] = [$question, $answer];
     }
     
-    brainEngine($mission, $questionsAndAnswers);
+    engine($mission, $questionsAndAnswers);
 }

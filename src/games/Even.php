@@ -2,7 +2,7 @@
 
 namespace BrainGames\Even;
 
-use function BrainGames\Engine\brainEngine;
+use function BrainGames\Engine\engine;
 
 use const BrainGames\Engine\ROUNDS_COUNT;
 
@@ -22,5 +22,5 @@ function brainEven()
         $questionsAndAnswers[] = [$question, $answer];
     }
     
-    brainEngine($mission, $questionsAndAnswers);
+    engine($mission, $questionsAndAnswers);
 }

@@ -6,7 +6,7 @@ use function BrainGames\Engine\engine;
 
 use const BrainGames\Engine\ROUNDS_COUNT;
 
-function brainProgression()
+function progression()
 {
     $mission = 'What number is missing in the progression?';
     

@@ -6,7 +6,7 @@ use function BrainGames\Engine\engine;
 
 use const BrainGames\Engine\ROUNDS_COUNT;
 
-function brainCalc()
+function calc()
 {
     $mission = 'What is the result of the expression?';
     

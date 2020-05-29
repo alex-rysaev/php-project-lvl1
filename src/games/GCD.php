@@ -19,7 +19,7 @@ function getGCD($a, $b)
     return $a + $b;
 }
 
-function gcd()
+function brainGCD()
 {
     $mission = 'Find the greatest common divisor of given numbers.';
     

@@ -20,7 +20,7 @@ function isPrime($number)
     return true;
 }
 
-function prime()
+function brainPrime()
 {
     $mission = 'Answer "yes" if given number is prime. Otherwise answer "no".';
     

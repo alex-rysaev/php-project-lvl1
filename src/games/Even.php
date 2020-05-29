@@ -11,7 +11,7 @@ function isEven($number)
     return $number % 2 == 0;
 }
 
-function even()
+function brainEven()
 {
     $mission = 'Answer "yes" if the number is even, otherwise answer "no".';
 
